@@ -33,10 +33,10 @@ import okhttp3.Callback;
 import okhttp3.Response;
 
 public class WeatherActivity extends AppCompatActivity {
-    public DrawerLayout drawerLayout;
-    private Button navButton;
     public SwipeRefreshLayout swipeRefresh;
     private String mWeatherId;
+    public DrawerLayout drawerLayout;
+    private Button navButton;
     private ScrollView weatherLayout;
     private TextView titleCity;
     private TextView titleUpdateTime;
@@ -49,6 +49,7 @@ public class WeatherActivity extends AppCompatActivity {
     private TextView carWashText;
     private TextView sportText;
     private ImageView bingPicImg;
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (Build.VERSION.SDK_INT>=21){
